@@ -1,0 +1,99 @@
+/* <!-- Fuentes de letras --> */
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap);
+
+html {
+    height: 100%;
+    
+}
+
+body {
+    height: 100%;
+    background-color: #F8F8F8;
+    
+}
+
+.body-p{
+    font-family: "Poppins", sans-serif; 
+}
+
+
+/*Estilos header*/
+
+header {
+    background-color: #8C1919;
+}
+
+.logo {
+    max-width: 50%;
+    height: auto;
+}
+
+
+/*Estilos main*/
+
+/*Estilos de los botones*/
+.btn.mi-boton {
+    /*Normal*/
+    margin-top: 8px;
+    background-color: #8C1919 ;
+    color: #F8F8F8 ;
+}
+
+.btn.mi-boton:hover { 
+    /*Cursor*/
+    background-color: #700c0c ;
+    color: #F8F8F8 ;   
+}
+
+/*Estilos footer*/
+footer {
+    background-color: #8C1919;
+}
+
+
+
+
+
+
+/* Metodo grafico*/
+/*Main*/
+/*rejilla*/
+.miInput {
+    width: 55px; /* Puedes ajustar este valor según tus necesidades */
+    height: 25px; /* Haz que la altura sea igual al ancho para que sea cuadrado */
+}
+
+
+
+/*
+Solucion metodo grafico
+*/
+/*Main*/
+/*Grafico*/
+.chartBox {
+    width: 800px;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px #8C1919;
+    background: white;
+}
+/*Parte final del documento*/
+.miRojo {
+    color: #8C1919; /* Rojo personalizado */
+}
+
+#miRoj{
+    color: #8C1919;  /* Rojo personalizado */
+} 
+
+
+
+/*
+Solucion Dos Fases
+*/
+/*Main*/
+/*Primera tabla*/
+#titulo {
+    background-color: #8C1919; /* Color azul de Bootstrap */
+    color: white; /* Texto blanco para mejor contraste */
+}

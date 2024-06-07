@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="/css/estilosPersonalizados.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- alertas -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="body-p d-flex flex-column h-100">
+
+    <!-- Encabezado -->
+    <header class="text-white py-4">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-auto">
+                    <a id="logo-header" href="https://www.udistrital.edu.co/inicio" target="_blank">
+                        <img src="/img/logo2.png" alt="Logo Universidad" class="logo">
+                    </a>
+                </div>
+                <div class="col">
+                    <h1>PROYECTO FINAL INVESTIGACIÓN DE OPERACIONES</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- Contenido Principal -->
+    <main class="py-4 flex-grow-1">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col">
+                    <div class="text-center mb-3 miRojo">
+                        <h1>Metodo Dos fases</h1><br>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Digite la cantidad de
+                            variables</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" id="variables">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-3">
+                        <label for="colFormLabel" class="col-sm-3 col-form-label">Digite la cantidad de
+                            restricciones</label>
+                        <div class="col-sm-2">
+                            <input type="number" class="form-control" id="restricciones">
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="d-grid gap-2 col-6 mx-auto">
+                        <button id="botonAceptar" class="btn btn-lg mi-boton" type="button">Aceptar</button>
+                    </div>
+                    <div id="tituloFObjetivo" class="d-grid gap-2 col-6 mx-auto">
+                    </div>
+                    <math display="block">
+                        <mtable class="funcionObjetivo" frame="solid" rowlines="solid" align="axis 3">
+                        </mtable>
+                    </math>
+                    <div id="tituloRestriccion" class="d-grid gap-2 col-6 mx-auto">
+                    </div>
+                    <math display="block">
+                        <mtable class="tablilla" frame="solid" rowlines="solid" align="axis 3">
+                        </mtable>
+                    </math>
+                    <div id="divSolucionar" class="d-grid gap-2 col-6 mx-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <h3>Universidad</h3>
+                    <a class="text-white text-decoration-none" href="https://www.udistrital.edu.co/inicio"
+                        target="_blank">
+                        <p>Distrital Francisco Jose de Caldas</p>
+                    </a>
+                    <a class="text-white text-decoration-none"
+                        href="http://www1.udistrital.edu.co:8080/web/facultad-tecnologica/inicio target=" target="_blank">
+                        <p>Facultad Tecnologica</p>
+                    </a>
+                </div>
+                <div class="col-lg-3">
+                    <h3>Docente</h3>
+                    <a class="text-white text-decoration-none"
+                        href="http://tecsistematizaciondatos.udistrital.edu.co:8080/profesores-ocasionales"
+                        target="_blank">
+                        <p> Edwing Oswaldo Berdugo Romero</p>
+                    </a>
+                    <a class="text-white text-decoration-none" href="mailto:eoberdugor@udistrital.edu.co"
+                        target="_blank">
+                        <p> eoberdugor@udistrital.edu.co</p>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-3">
+                    <h3>Estudiante</h3>
+                    <a class="text-white text-decoration-none" href="https://github.com/Duvan2662" target="_blank">
+                        <p> Duvan David Riaño Salazar</p>
+                    </a>
+                    <a class="text-white text-decoration-none" href="mailto:ddrianos@udistrital.edu.co" target="_blank">
+                        <p> ddrianos@udistrital.edu.co</p>
+                    </a> 
+                </div>
+
+                <div class="col-lg-3">
+                    <h3>Estudiante</h3>
+                    <a class="text-white text-decoration-none" href="https://github.com/Duvan2662" target="_blank">
+                        <p> Daniel Camilo Zamora Mancipe</p>
+                    </a>
+                    <a class="text-white text-decoration-none" href="mailto:dczamoram@udistrital.edu.co" target="_blank">
+                        <p>dczamoram@udistrital.edu.co</p>
+                    </a>
+                </div>
+
+                <div class="col-lg-3">
+                    <h3>Estudiante</h3>
+                    <a class="text-white text-decoration-none" href="https://github.com/Duvan2662" target="_blank">
+                        <p> Joan Sebastian Samaca Bautista</p>
+                    </a>
+                    <a class="text-white text-decoration-none" href="mailto:jssamacab@udistrital.edu.co" target="_blank">
+                        <p>jssamacab@udistrital.edu.co</p>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/scriptMetDosFases.js"></script>
+</body>
+
+</html>
